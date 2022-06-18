@@ -1,0 +1,68 @@
+.service {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+}
+
+.awsm {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.awsm> :nth-child(1) {
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.awsm> :nth-child(2) {
+    color: var(--orange);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.awsm> :nth-child(3) {
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 21px;
+    margin-top: 10px;
+}
+.a-button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+.cards {
+    position: relative;
+}
+.cards>*{
+    position: absolute;
+}
+
+.a-blur2 {
+    left: 14rem;
+    top: 8rem;
+}
+.a-blur1 {
+    left: 23rem;
+    top: 19rem;
+}
+
+@media screen and (max-width: 480px) {
+    .service {
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+    }
+    .cards>* {
+        position: static;
+    }
+}
